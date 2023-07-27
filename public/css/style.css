@@ -1,0 +1,285 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 48px;
+    font-weight: bold;
+    color: #007BFF;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Form */
+#weatherForm {
+    text-align: center;
+}
+
+#searchInput {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#searchButton  {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Weather Information */
+.weather-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.weather-card {
+    width: 250px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+.weather-icon {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.weather-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.weather-info {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* Header */
+.header {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo sup {
+    font-size: 12px;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.navbar a:hover{
+    background-color: #0056b3; 
+}
+
+/* Jumbotron */
+.jumbotron {
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 80%;
+    background-image: url('/images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.jumbotron-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.jumbotron h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.jumbotron p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.jumbotron .btn {
+    text-decoration: none;
+    color: #fff;
+    background-color: #1a8cff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+#clearButton{
+    text-decoration: none;
+    color: #fff;
+    background-color: #1a8cff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+/* Weather */
+.weather-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.weather-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.weather-item {
+    flex: 0 0 200px;
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.weather-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover; 
+    border-radius: 50%; 
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.weather-item:hover {
+    transform: scale(1.05);
+    color : #1a8cff;
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    right: 0;
+}
+
+
+
+.footer-text p {
+    margin: 0;
+}
+
+.footer-iconTop a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #0056b3; 
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.footer-iconTop a:hover {
+    background-color: #1a8cff; 
+}
+
+
+/* Media Query offffffff */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .jumbotron {
+        padding: 50px 0;
+    }
+
+    .jumbotron h1 {
+        font-size: 36px;
+        margin-bottom: 15px;
+    }
+
+    .jumbotron p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .jumbotron .btn {
+        font-size: 14px;
+    }
+
+    .weather-item {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .container {
+        max-width: 1200px;
+    }
+
+    .weather-item {
+        flex-basis: calc(33.33% - 20px);
+    }
+}

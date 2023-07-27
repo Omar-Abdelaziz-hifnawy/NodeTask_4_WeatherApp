@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="/images/logo.png" type="image/png">
+</head>
+<body>
+    {{> header}}
+    <h1>HOME</h1>
+    <section class="jumbotron">
+        <div class="jumbotron-content">
+            <h1>Explore the Weather</h1>
+            <p>Check the latest weather conditions and forecasts.</p>
+            <a href="/check-weather" class="btn">Ckeck Your Contry Weather</a>
+        </div>
+    </section>
+
+    <section id="weather-section" class="weather-section">
+        <h2>Weather Conditions</h2>
+        <div class="weather-info">
+            <div class="weather-item">
+                <img src="/images/pic1.jpg" alt="Sunny">
+                <p>Sunny</p>
+            </div>
+            <div class="weather-item">
+                <img src="/images/pic2.jpg" alt="Cloudy">
+                <p>Cloudy</p>
+            </div>
+            <div class="weather-item">
+                <img src="images/pic3.jpg" alt="Rainy">
+                <p>Rainy</p>
+            </div>
+        </div>
+    </section>
+
+    {{> footer}}
+</body>
+</html>

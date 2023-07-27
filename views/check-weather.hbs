@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Weather</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/images/logo.png" type="image/png">
+</head>
+<body>
+    {{> header}}
+    <h1>Weather</h1>
+    <div class="container">
+        <form id="weatherForm">
+            <input type="text" placeholder="Enter location ..." id="searchInput">
+            <button type="submit" id="searchButton">Search</button>
+        </form>
+    </div>
+    <div class="container">
+        <p class="error-message" id="errorText">{{error}}</p>
+        <p class="weather-info" id="location"></p>
+        <p class="weather-info" id="country"></p> 
+        <p class="weather-info" id="latitude"></p> 
+        <p class="weather-info" id="longitude"></p> 
+        <p class="weather-info" id="temperature"></p>
+        <p class="weather-info" id="summary"></p>
+    </div>
+    {{> footer}}
+
+    <script src="/index.js"></script>
+</body>
+</html>
